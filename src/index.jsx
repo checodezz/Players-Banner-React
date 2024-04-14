@@ -4,20 +4,27 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import App from "./App";
-import PlayerList from "../pages/PlayerList"
-import Report from "../pages/Report"
+import PlayerList from "../pages/PlayerList";
+import Report from "../pages/Report";
+import PlayerDetails from "../pages/PlayerDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },{
+  },
+  {
     path: "/playerlist",
-    element : <PlayerList/>
-  }, {
-    path : "/report",
-    element : <Report/>
-  }
+    element: <PlayerList />,
+  },
+  {
+    path: "/report",
+    element: <Report />,
+  },
+  {
+    path: "/playerlist/:playerId",
+    element: <PlayerDetails />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

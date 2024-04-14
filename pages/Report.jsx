@@ -5,7 +5,7 @@ const Report = () => {
     <>
       <Header />
       <main className="container">
-        <h2>Player Report</h2>
+        <h2 className="my-3">Player Report</h2>
         <hr />
         <div className="row d-flex justify-content-between ">
           <div className="card col-md-6 mx-auto">

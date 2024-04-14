@@ -39,7 +39,7 @@ const PlayerList = () => {
                       {player.role}
                     </p>
                     <Link
-                      to={`playerdetails/${player.id}`}
+                      to={`/playerlist/${player.id}`}
                       className="btn btn-primary"
                     >
                       Details
