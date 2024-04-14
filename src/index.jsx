@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import App from "./App";
 import PlayerList from "../pages/PlayerList"
+import Report from "../pages/Report"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,9 @@ const router = createBrowserRouter([
   },{
     path: "/playerlist",
     element : <PlayerList/>
+  }, {
+    path : "/report",
+    element : <Report/>
   }
 ]);
 
