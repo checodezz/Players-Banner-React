@@ -9,14 +9,14 @@ export default function App() {
       <Header />
       <main>
         <img
-          src="https://placehold.co/1600x400?text=Hello+World"
+          src="https://placehold.co/1600x400?text=Players+Banner"
           className="img-fluid"
         />
 
         <div className="text-center my-5">
           <h2>Cricket Players Database</h2>
           <p>Explore the profiles of your favorite cricket players.</p>
-          <Link to="/" className="btn btn-primary">
+          <Link to="/playerlist" className="btn btn-primary">
             Explore Players
           </Link>
         </div>
@@ -27,7 +27,7 @@ export default function App() {
             Explore our latest player report to gain insights into our ICC's
             performance and growth.
           </p>
-          <Link to="/" className="btn btn-primary">
+          <Link to="/report" className="btn btn-primary">
             View Report{" "}
           </Link>
         </div>

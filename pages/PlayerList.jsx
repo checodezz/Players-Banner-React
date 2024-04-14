@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const PlayerList = () => {
@@ -25,7 +24,7 @@ const PlayerList = () => {
         <div className="">
           {playersData.map((player) => {
             return (
-              <div className="card col-md-6 my-3">
+              <div key={player.id} className="card col-md-6 my-3">
                 <div className="card-header">
                   <h2>{player.name}</h2>
                 </div>
@@ -40,7 +39,7 @@ const PlayerList = () => {
                       {player.role}
                     </p>
                     <Link
-                      to={`playerdetails/${player.id}`}
+                      to={`/playerlist/${player.id}`}
                       className="btn btn-primary"
                     >
                       Details
